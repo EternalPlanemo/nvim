@@ -93,6 +93,7 @@ Plug 'tyrannicaltoucan/vim-deep-space'
 Plug 'preservim/tagbar'
 Plug 'Yggdroot/indentLine'
 Plug 'ryanoasis/vim-devicons'
+Plug 'goballooning/vim-live-latex-preview'
 
 " Initialize plugin system
 call plug#end()
