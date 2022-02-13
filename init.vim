@@ -1,5 +1,6 @@
 set nu
 syntax on
+syntax enable
 set tabstop=4
 set expandtab
 set incsearch
@@ -18,6 +19,7 @@ let NERDTreeWinPos = 'left'     " Panel opens on the left side
 let NERDTreeWinSize = 31        " Set panel width to 31 columns
 
 autocmd WinEnter * call s:CloseIfOnlyNerdTreeLeft()
+autocmd BufNewFile,BufRead *.tex set syntax=tex
 
 " Close all open buffers on entering a window if the only
 " buffer that's left is the NERDTree buffer
@@ -94,9 +96,12 @@ Plug 'preservim/tagbar'
 Plug 'Yggdroot/indentLine'
 Plug 'ryanoasis/vim-devicons'
 Plug 'goballooning/vim-live-latex-preview'
+Plug 'lervag/vimtex'
 
 " Initialize plugin system
 call plug#end()
 
 source ~/.config/nvim/theme.vim 
 source ~/.config/nvim/bindings.vim
+source ~/.config/nvim/vimtex.vim
+source ~/.config/nvim/term.vim
