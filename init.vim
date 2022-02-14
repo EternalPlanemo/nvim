@@ -93,6 +93,7 @@ Plug 'tyrannicaltoucan/vim-deep-space'
 Plug 'preservim/tagbar'
 Plug 'Yggdroot/indentLine'
 Plug 'ryanoasis/vim-devicons'
+Plug 'mattn/emmet-vim'
 
 " Initialize plugin system
 call plug#end()
